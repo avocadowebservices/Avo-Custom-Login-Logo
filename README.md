@@ -36,8 +36,7 @@ Edit `custom-login-logo.php` to change:
 
 ## 🧑‍💻 Author
 
-Developed by **Joseph Brzezowski** 
-AvocadoWeb Services LLC
+Developed by **Joseph Brzezowski** - AvocadoWeb Services LLC
 🔗 [https://avocadoweb.net](https://avocadoweb.net)
 
 ---
