@@ -16,7 +16,7 @@ Replace the default WordPress login logo with your own, add a custom link, and a
 
 ## 📦 Installation
 
-1. Download the plugin as a ZIP: [`avo-custom-login-logo-public.zip`](https://avocadoweb.net) *(or from this repo)*  
+1. Download the plugin as a ZIP from this repo.
 2. In WordPress admin, go to **Plugins → Add New → Upload Plugin**  
 3. Upload the ZIP and activate it
 
