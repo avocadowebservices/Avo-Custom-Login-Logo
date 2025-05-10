@@ -39,12 +39,12 @@ Edit the `custom-login-logo.php` file to:
 
 ---
 
-## 📸 Screenshot
 
 ```markdown
 ## 📸 Screenshot
 
 ![Custom Login Screenshot](https://raw.githubusercontent.com/avocadowebservices/AvoCustomLoginLogo/main/screenshot.png)
+
 ```
 
 ---
