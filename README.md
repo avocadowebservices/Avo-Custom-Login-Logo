@@ -3,6 +3,8 @@
 **A minimalist, branded login page plugin for WordPress**  
 Replace the default WordPress login logo with your own, add a custom link, and a copyright footer.
 
+“A simple and lightweight WordPress plugin to replace the login screen logo, customize its link, and add branded footer — made by AvocadoWeb Services LLC.”
+
 ---
 
 ## 🔧 Features
