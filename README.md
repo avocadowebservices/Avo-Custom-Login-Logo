@@ -1,5 +1,9 @@
 # Avo Custom Login Logo
 
+![License](https://img.shields.io/badge/license-MIT-green)
+![WP Tested](https://img.shields.io/badge/WordPress-6.5-blue)
+![Made by](https://img.shields.io/badge/Made%20by-AvocadoWeb-brightgreen)
+
 **A minimalist, branded login page plugin for WordPress**  
 Replace the default WordPress login logo with your own, add a custom link, and a copyright footer.
 
@@ -8,41 +12,58 @@ A simple and lightweight WordPress plugin to replace the login screen logo, cust
 ---
 
 ## 🔧 Features
-- Replace the WordPress login logo with your custom image (hosted externally or locally).
-- Change the logo's URL to your website instead of wordpress.org.
-- Add a custom hover title over the logo.
+- Replace the WordPress login logo with a custom image.
+- Set a custom logo link URL (e.g. your company homepage).
+- Update the logo hover title.
 - Display a copyright footer.
-- No bloat — only 1 PHP file!
+- Lightweight: just one PHP file.
 
 ---
 
 ## 📦 Installation
 
-1. Download the plugin as a ZIP from this repo.
-2. In WordPress admin, go to **Plugins → Add New → Upload Plugin**  
-3. Upload the ZIP and activate it
+1. Download this repository as a ZIP file or clone it.
+2. In WordPress, go to **Plugins → Add New → Upload Plugin**.
+3. Select the ZIP and click **Install Now**.
+4. Activate the plugin — that’s it!
 
 ---
 
 ## 🛠️ Customization
 
-Edit `custom-login-logo.php` to change:
-- **Logo URL**: change the `background-image` to your own.
-- **Link URL**: change `'https://avocadoweb.net'` to your domain.
-- **Hover Title**: customize the tooltip when hovering over the logo.
-- **Footer Text**: update or localize `"© AvocadoWeb Services LLC"`.
+Edit the `custom-login-logo.php` file to:
+- Change the logo image URL.
+- Change the logo link to your homepage.
+- Edit the hover title text.
+- Update the copyright footer.
+
+---
+
+## 📸 Screenshot
+
+> 🖼️ Add a screenshot of your branded login page here:  
+> `screenshot.png`
+
+```markdown
+![Custom Login Screenshot](screenshot.png)
+```
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repo, suggest improvements, or submit a pull request!
 
 ---
 
 ## 🧑‍💻 Author
 
-Developed by **Joseph Brzezowski** - AvocadoWeb Services LLC
+**Joseph Brzezowski**  
+Founder, AvocadoWeb Services LLC  
 🔗 [https://avocadoweb.net](https://avocadoweb.net)
 
 ---
 
 ## 📄 License
 
-MIT License — see [LICENSE.md](LICENSE.md)  
-Feel free to use, modify, and contribute.
-
+This project is licensed under the MIT License. See [LICENSE.md](LICENSE.md) for full terms.
