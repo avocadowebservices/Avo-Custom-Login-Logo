@@ -45,7 +45,6 @@ Edit the `custom-login-logo.php` file to:
 ## 📸 Screenshot
 
 ![Custom Login Screenshot](https://raw.githubusercontent.com/avocadowebservices/AvoCustomLoginLogo/main/screenshot.png)
-
 ```
 
 ---
