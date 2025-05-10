@@ -41,10 +41,6 @@ Edit the `custom-login-logo.php` file to:
 
 ## 📸 Screenshot
 
-> 🖼️ Add a screenshot of your branded login page here:  
-> `screenshot.png`
-
-
 ```markdown
 ## 📸 Screenshot
 
