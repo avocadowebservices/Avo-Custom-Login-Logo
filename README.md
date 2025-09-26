@@ -1,22 +1,23 @@
-# Avo Custom Login Logo
+# 🥑 Avo Custom Login Logo
 
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![WP Tested](https://img.shields.io/badge/WordPress-6.5-blue)
+![WP Tested](https://img.shields.io/badge/WordPress-6.8-blue)
 ![Made by](https://img.shields.io/badge/Made%20by-AvocadoWeb-brightgreen)
 
 **A minimalist, branded login page plugin for WordPress**  
 Replace the default WordPress login logo with your own, add a custom link, and a copyright footer.
 
-A simple and lightweight WordPress plugin to replace the login screen logo, customize its link, and add branded footer — made by AvocadoWeb Services LLC.
+A simple and lightweight plugin — one PHP file, no bloat — made by [AvocadoWeb Services LLC](https://avocadoweb.net).
 
 ---
 
-## 🔧 Features
-- Replace the WordPress login logo with a custom image.
-- Set a custom logo link URL (e.g. your company homepage).
+## ✨ Features
+- Swap the default WordPress login logo with your own.
+- Set a custom logo link (e.g. your site homepage).
 - Update the logo hover title.
-- Display a copyright footer.
-- Lightweight: just one PHP file.
+- Show a branded copyright footer.
+- Lightweight: just one PHP file, no extra assets.
 
 ---
 
@@ -24,35 +25,41 @@ A simple and lightweight WordPress plugin to replace the login screen logo, cust
 
 1. Download this repository as a ZIP file or clone it.
 2. In WordPress, go to **Plugins → Add New → Upload Plugin**.
-3. Select the ZIP and click **Install Now**.
-4. Activate the plugin — that’s it!
+3. Upload the ZIP and click **Install Now**.
+4. Activate the plugin — done.
 
 ---
 
 ## 🛠️ Customization
 
-Edit the `custom-login-logo.php` file to:
+Edit the `avo-custom-login-logo.php` file to:
 - Change the logo image URL.
-- Change the logo link to your homepage.
+- Update the logo link (defaults to site home).
 - Edit the hover title text.
-- Update the copyright footer.
+- Change or remove the footer.
 
 ---
 
 ## 📸 Screenshot
 
-![Custom Login Screenshot](https://raw.githubusercontent.com/avocadowebservices/AvoCustomLoginLogo/main/screenshot.png)
-
+![Custom Login Screenshot](https://raw.githubusercontent.com/avocadowebservices/Avo-Custom-Login-Logo/main/screenshot.png)
 
 ---
 
 ## 🤝 Contributing
 
-Feel free to fork this repo, suggest improvements, or submit a pull request!
+Got ideas? Fork this repo, open an issue, or send a pull request. Always happy to see improvements.
 
 ---
 
-## 🧑‍💻 Author
+## ☕ Support This Project
+
+If you like this plugin and want to support development:  
+👉 [Buy me a coffee](https://buymeacoffee.com/avocadowebservices)
+
+---
+
+## 👨‍💻 Author
 
 **Joseph Brzezowski**  
 Founder, AvocadoWeb Services LLC  
@@ -62,4 +69,4 @@ Founder, AvocadoWeb Services LLC
 
 ## 📄 License
 
-This project is licensed under the MIT License. See [LICENSE.md](LICENSE.md) for full terms.
+This project is licensed under the MIT License. See [LICENSE.md](LICENSE.md) for details.
