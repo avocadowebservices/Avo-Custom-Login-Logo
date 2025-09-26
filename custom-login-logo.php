@@ -1,46 +1,56 @@
 <?php
-/*
-Plugin Name: Avo Custom Login Logo
-Description: Replaces the WordPress login logo with AvocadoWeb branding.
-Version: 1.1
-Author: Joseph Brzezowski
-Requires at least: 5.0
-Tested up to: 6.5
-*/
+/**
+ * Plugin Name: Avo Custom Login Logo
+ * Plugin URI:  https://github.com/avocadowebservices/Avo-Custom-Login-Logo
+ * Description: Replace the default WordPress login logo with your own. Lightweight, no settings, just pure simplicity.
+ * Version:     1.0.0
+ * Author:      Joseph Brzezowski
+ * Author URI:  https://avocadoweb.net/
+ * License:     MIT
+ * License URI: https://opensource.org/licenses/MIT
+ * Text Domain: avo-custom-login-logo
+ * Requires at least: 5.0
+ * Tested up to: 6.8
+ */
 
-function custom_login_logo() {
-    echo '
+// Prevent direct access.
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
+/**
+ * Add custom logo CSS to login page.
+ */
+function avo_custom_login_logo() {
+    // Path to logo inside the plugin folder
+    $logo_url = plugin_dir_url( __FILE__ ) . 'avo-logo.png';
+    ?>
     <style type="text/css">
-        #login h1 a {
-            background-image: url(https://avocadoweb.net/wp-content/uploads/2025/05/newlogo.png) !important;
-            background-size: contain !important;
-            width: 100% !important;
-            height: 100px !important;
+        body.login div#login h1 a {
+            background-image: url('<?php echo esc_url( $logo_url ); ?>');
+            width: 320px;
+            height: 80px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-bottom: 20px;
         }
-        .avo-login-footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 13px;
-            color: #555;
-        }
-    </style>';
+    </style>
+    <?php
 }
-add_action('login_head', 'custom_login_logo');
+add_action( 'login_enqueue_scripts', 'avo_custom_login_logo' );
 
-// Change login logo link URL
-function custom_login_logo_url() {
-    return 'https://avocadoweb.net';
+/**
+ * Change login logo URL to site home.
+ */
+function avo_custom_login_logo_url() {
+    return home_url();
 }
-add_filter('login_headerurl', 'custom_login_logo_url');
+add_filter( 'login_headerurl', 'avo_custom_login_logo_url' );
 
-// Change logo hover title
-function custom_login_logo_url_title() {
-    return 'Welcome to AvocadoWeb';
+/**
+ * Change login logo title.
+ */
+function avo_custom_login_logo_title() {
+    return get_bloginfo( 'name' );
 }
-add_filter('login_headertext', 'custom_login_logo_url_title');
-
-// Add custom footer text
-function custom_login_footer() {
-    echo '<div class="avo-login-footer">© AvocadoWeb Services LLC</div>';
-}
-add_action('login_footer', 'custom_login_footer');
+add_filter( 'login_headertext', 'avo_custom_login_logo_title' );
