@@ -18,10 +18,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function avo_custom_login_logo() {
-    $logo_url = plugin_dir_url( __FILE__ ) . 'avo-logo.png';
+    $logo_url = plugin_dir_url( __FILE__ ) . 'logo.png';
     
     // Check if file exists for debugging
-    $logo_path = plugin_dir_path( __FILE__ ) . 'avo-logo.png';
+    $logo_path = plugin_dir_path( __FILE__ ) . 'logo.png';
     $file_exists = file_exists( $logo_path ) ? 'true' : 'false';
     ?>
     <style type="text/css">
@@ -57,3 +57,10 @@ function avo_custom_login_logo_title() {
     return get_bloginfo( 'name' );
 }
 add_filter( 'login_headertext', 'avo_custom_login_logo_title' );
+
+function avo_custom_login_footer() {
+    echo '<div style="text-align: center; padding: 20px; font-size: 12px; color: #666;">
+        &copy; ' . date('Y') . ' ' . get_bloginfo('name') . '. All rights reserved.
+    </div>';
+}
+add_action( 'login_footer', 'avo_custom_login_footer' );
